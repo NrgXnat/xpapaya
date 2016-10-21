@@ -14,7 +14,11 @@
     #end
 #end
 
-<script type="application/javascript" src="$content.getURI('scripts/papaya/papaya.js')"></script>
+<script type="application/javascript" src="$content.getURI('scripts/xnat-plugins/xpapaya/papaya.js')"></script>
+<script type="application/javascript" src="$content.getURI('scripts/xnat-plugins/xpapaya/xpapaya.js')"></script>
+<script type="application/javascript">
+    var siteUrl = "$siteConfig.siteUrl";
+</script>
 <link rel="stylesheet" type="text/css" href="$content.getURI('style/xnat-plugins/xpapaya/xpapaya.css')"/>
 
 <h3>Scans</h3>
@@ -107,8 +111,8 @@
 </table>
 <script type="application/javascript">
 $('.view-in-papaya').click(function () {
-    var uri = $(this).data('scanUri');
-    alert("You clicked the thing with URI: " + uri);
+    var scanUri = $(this).data('scanUri');
+    launchPapayaForScan(scanUri);
 });
 </script>
 <BR/>
