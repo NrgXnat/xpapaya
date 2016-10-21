@@ -1,0 +1,7 @@
+@import url("papaya.css");
+
+.view-in-papaya {
+    border-bottom: 1px dashed #a1c3f5;
+    cursor: pointer;
+    white-space: nowrap;
+}

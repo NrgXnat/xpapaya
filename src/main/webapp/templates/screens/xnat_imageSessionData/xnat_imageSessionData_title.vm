@@ -1,6 +1,0 @@
-<DIV id="report_title" class="edit_title">$displayManager.getSingularDisplayNameForImageSession(): #if($!om.getIdentifier($project,true))$!om.getIdentifier($project,true)#elseif($om.getLabel())$om.getLabel()#else$om.getId()#end</DIV>
-<script type="application/javascript">
-    $('body').on('click', '.scan-viewer', function(){
-        alert("You clicked the thing");
-    })
-</script>
